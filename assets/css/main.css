@@ -235,7 +235,7 @@ input, select, textarea {
 		margin: 0 0 2em 0;
 	}
 
-	h1, h2, h3, h4, h5, h6 {
+	h1, h3, h4, h5, h6 {
 		color: #ffffff;
 		font-weight: 300;
 		letter-spacing: 0.1em;
@@ -243,6 +243,16 @@ input, select, textarea {
 		margin: 0 0 1em 0;
 		text-transform: uppercase;
 	}
+
+	h2 {
+		color: #ffffff;
+		font-weight: 300;
+		letter-spacing: 0.1em;
+		line-height: 1.5;
+		margin: 0 0 1em 0;
+		text-transform: uppercase;
+		 -webkit-text-stroke: 1.5px black;
+		}
 
 		h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
 			color: inherit;
