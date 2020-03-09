@@ -54,9 +54,9 @@ footer {
 }
 
 .amazon-ads span{
-  font-color: #ffffff;
-  padding-top: 1em;
-  font-size: 1em;
+  font-color: #ffffff !important;
+  padding-top: 1em !important;
+  font-size: 1em !important;
 }
 
 /*---Media Queries --*/
