@@ -53,6 +53,12 @@ footer {
   font-size: 1.1em !important;
 }
 
+.amazon-ads span{
+  color: #ffffff !important;
+  padding-top: 1em !important;
+  font-size: 1em !important;
+}
+
 /*---Media Queries --*/
 @media (max-width: 992px) {
 
