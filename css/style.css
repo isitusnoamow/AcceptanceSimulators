@@ -1,5 +1,4 @@
 @import url(fontawesome-all.min.css);
-@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300italic,400,400italic");
 
 
 html, body {
@@ -9,6 +8,10 @@ html, body {
 
 footer {
   background: #26282B;
+}
+
+.footer-class h2 {
+  color: #ffffff !important;
 }
 
 .navbar span, li {
@@ -90,10 +93,12 @@ h1 {
 
 h2 {
   font-size: 1.25em;
+  color: #FFFFFF !important;
 }
 
 h3 {
   font-size: 1.1em;
+
 }
 
 h4 {
@@ -110,3 +115,10 @@ h6 {
   font-size: 0.7em;
 }
 
+.privacy {
+  padding-bottom: 2em;
+}
+
+.privacy a {
+  color: #34A58E;
+}
