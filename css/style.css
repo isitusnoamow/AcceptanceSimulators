@@ -30,13 +30,11 @@ footer {
 /*    border: 3px solid green;
 */}
 
-.navbar button {
-  padding: 5px 30px;
-  color:  #A0A0A1;
-  border: 1px solid grey;
-  font-size : 18px
+.sort {
+  margin-top: 1em !important;
+/*  border: 3px solid green;
+*/}
 
-}
   
 .navbar strong {
   color: #FFFFFF;
@@ -47,7 +45,8 @@ footer {
 }
 
 .navbar {
-}
+/*  border: 3px solid green;
+*/}
 
 .nav-link {
   font-size: 1.1em !important;
