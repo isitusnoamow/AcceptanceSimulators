@@ -63,7 +63,15 @@
 <div class="container-fluid padding">
 	<div class="row sort text-right">
 		<div class="col-12">
-			<a href="#"><button type="button" class="btn btn-outline-secondary btn-lg">Sort By</button></a>
+			<div class="dropdown">
+			  <button class="btn btn-lg btn-outline-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+			    Sort By
+			  </button>
+			  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+			    <a class="dropdown-item" href="#">Date</a>
+			    <a class="dropdown-item" href="#">College Name (Alphabetical)</a>
+			  </div>
+			</div>
 		</div>
 	</div>
 </div>
