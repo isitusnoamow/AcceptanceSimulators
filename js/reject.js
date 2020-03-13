@@ -95,6 +95,7 @@ function sortByName() {
     rejection_letters.forEach(createHTML);
 }
 
+// Adds cards to DOM
 function createHTML(item, index) {
 
     // Template of what how a letter should be displayed in the DOM
@@ -108,11 +109,57 @@ function createHTML(item, index) {
                 </div>
             </div>
         </div>
-
     `;
 
     // Adds cards to DOM
     var cardDiv = document.getElementById('cards');
 
-    cardDiv.insertAdjacentHTML('beforeend', template);   
+    cardDiv.insertAdjacentHTML('beforeend', template);
+
+    // Adds ad randomly
+    if (Math.random() < 0.1) {
+        createAd();
+    }
+}
+
+// Adds ads to DOM
+function createAd() {
+    var adTemplate = `<div class="col-md-4">
+            <!-- -->
+            <div class="card mb-4 box-shadow">
+                
+                <div class="card-body">
+                    <input type="hidden" name="IL_IN_ARTICLE">
+                    <h4 class="card-title">Ad</h4>
+                    <p class="card-text">Here's an ad.</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="col-md-4">
+            <!-- -->
+            <div class="card mb-4 box-shadow">
+                
+                <div class="card-body">
+                    <div id="552529255">
+                        <script type="text/javascript">
+                        try {
+                            window._mNHandle.queue.push(function (){
+                            window._mNDetails.loadTag("552529255", "300x250", "552529255");
+                            });
+                        }
+                        catch (error) {}
+                        </script>
+                    </div>
+                    <h4 class="card-title">Ad</h4>
+                    <p class="card-text">Here's an ad.</p>
+                </div>
+            </div>
+        </div>`
+
+    // Adds cards to DOM
+    var cardDiv = document.getElementById('cards');
+
+    cardDiv.insertAdjacentHTML('beforeend', adTemplate);
+
 }
