@@ -116,10 +116,10 @@ function createHTML(item, index) {
 
     cardDiv.insertAdjacentHTML('beforeend', template);
 
-    // Adds ad randomly
-    if (Math.random() < 0.1) {
-        createAd();
-    }
+    // // Adds ad randomly
+    // if (Math.random() < 0.1) {
+    //     createAd();
+    // }
 }
 
 // Adds ads to DOM
