@@ -8,6 +8,10 @@ html, body {
 
 footer {
   background: #1f2224;
+  position: absolute;
+  left: 0;
+  right: 0;
+  width: 100%;
 }
 
 .footer-class h2 {
@@ -125,7 +129,7 @@ p {
 }
 
 .privacy {
-  padding-bottom: 2em;
+  padding: 2em;
 }
 
 .privacy a {
@@ -158,4 +162,12 @@ p {
 
 .close {
   color: #ffffff;
+}
+
+.about-text {
+  min-height: 100%;  /* Fallback for browsers do NOT support vh unit */
+  min-height: 100vh; /* These two lines are counted as one :-)       */
+
+  display: flex;
+  align-items: center;
 }

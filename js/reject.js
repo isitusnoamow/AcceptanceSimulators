@@ -48,6 +48,8 @@ var rejection_letters = [
 // When DOM is loaded
 document.addEventListener('DOMContentLoaded', function () {
 
+    sortByName();
+
 	document.getElementById("DateItem").addEventListener('click',function ()
 	{
 		sortByDate();
@@ -105,13 +107,20 @@ function sortByName() {
 	});
 	console.log(rejection_letters);
 
-    rejection_letters.forEach(createHTML);
+    // Determines where ad will be places randomly
+    var rando = getRandomInt(4, rejection_letters.length);
+    
+    for (i = 0; i < rejection_letters.length; i++) {
+        if (i == rando)
+            createAd();
+        createHTML(rejection_letters[i]);
+    }
 
 
 }
 
 // Adds cards to DOM
-function createHTML(item, index) {
+function createHTML(item) {
 
     // Template of what how a letter should be displayed in the DOM
     const template = `
@@ -132,11 +141,6 @@ function createHTML(item, index) {
     var cardDiv = document.getElementById('cards');
 
     cardDiv.insertAdjacentHTML('beforeend', template);
-
-    // // Adds ad randomly
-    // if (Math.random() < 0.1) {
-    //     createAd();
-    // }
 }
 
 // Adds ads to DOM
@@ -181,3 +185,9 @@ function createAd() {
 
 }
 
+// Returns a random number between min and max
+function getRandomInt(min, max) {
+  min = Math.ceil(min);
+  max = Math.floor(max);
+  return Math.floor(Math.random() * (max - min)) + min; //The maximum is exclusive and the minimum is inclusive
+}
