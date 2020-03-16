@@ -8,6 +8,10 @@ html, body {
 
 footer {
   background: #1f2224;
+  position: absolute;
+    left: 0;
+    right: 0;
+    width: 100%;
 }
 
 .footer-class h2 {
@@ -170,15 +174,5 @@ p {
 }
 
 .about-text {
-  padding-top: 4em;
-}
-
-.footer-class {
-    position: absolute;
-    left: 0;
-    right: 0;
-    width: 100%;
-    position: absolute;
-    bottom: 0;
-    width: 100%;
+  padding: 6.2em;
 }
