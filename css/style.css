@@ -142,12 +142,16 @@ p {
 }
 
 .modal-content {
-  background-color: #26282B;
+  background-color: #1f2224;
 }
 
 .modal-header {
   background-color: #1f2224;
   border: 0px;
+}
+
+.modal-header span {
+  color: #ffffff solid;
 }
 
 .modal-footer {
@@ -158,6 +162,11 @@ p {
 
 .close {
   color: #ffffff;
+  text-shadow: 0 0px 0;
+}
+
+.close:hover {
+  color: #e1e1e1;
 }
 
 .about-text {
