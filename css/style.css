@@ -8,10 +8,6 @@ html, body {
 
 footer {
   background: #1f2224;
-  position: absolute;
-  left: 0;
-  right: 0;
-  width: 100%;
 }
 
 .footer-class h2 {
@@ -165,9 +161,15 @@ p {
 }
 
 .about-text {
-  min-height: 100%;  /* Fallback for browsers do NOT support vh unit */
-  min-height: 100vh; /* These two lines are counted as one :-)       */
+  padding-top: 4em;
+}
 
-  display: flex;
-  align-items: center;
+.footer-class {
+    position: absolute;
+    left: 0;
+    right: 0;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
 }
