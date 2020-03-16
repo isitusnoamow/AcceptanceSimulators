@@ -45,20 +45,33 @@ var rejection_letters = [
     }
 ];
 
-
-
 // When DOM is loaded
 document.addEventListener('DOMContentLoaded', function () {
 
 	document.getElementById("DateItem").addEventListener('click',function ()
 	{
 		sortByDate();
+        $('.pop').on('click', modalPopUp);
+
 	});
 	document.getElementById("CollegeNameItem").addEventListener('click',function ()
 	{
 		sortByName();
+        $('.pop').on('click', modalPopUp);
+
 	}); 
+    
+    $('.pop').on('click', modalPopUp);
+
+
 });
+
+// Shows an enlarged version of image
+// Based on https://stackoverflow.com/a/29605535/9512643
+function modalPopUp() {   
+    $('.imagepreview').attr('src', $(this).find('img').attr('src'));
+    $('#imagemodal').modal('show');
+}
 
 function sortByDate() {
     // Clears cards element
@@ -93,6 +106,8 @@ function sortByName() {
 	console.log(rejection_letters);
 
     rejection_letters.forEach(createHTML);
+
+
 }
 
 // Adds cards to DOM
@@ -102,7 +117,9 @@ function createHTML(item, index) {
     const template = `
         <div class="col-md-4">
             <div class="card mb-4 box-shadow" >
-                <img class="card-img-top" src=${item.url}>
+                <a href="#" class="pop">
+                    <img class="card-img-top" src="${item.url}">
+                </a>
                 <div class="card-body">
                     <h4 class="card-title">${item.title}</h4>
                     <p class="card-text">${item.description}</p>
@@ -163,3 +180,4 @@ function createAd() {
     cardDiv.insertAdjacentHTML('beforeend', adTemplate);
 
 }
+

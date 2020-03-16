@@ -24,6 +24,8 @@
 	<title>Prepare to be Rejected</title>
 	<meta name="description" content="Rejection is just a mindset. Get in the mindset of rejection by looking at some rejection letters!">
 	<meta name="keywords" content="college, university, acceptance letters, college decision, rejection letters">
+
+	<!-- Dependencies -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
@@ -91,7 +93,9 @@
 		<div class="col-md-4">
 			<!-- -->
 			<div class="card mb-4 box-shadow" >
-				<img class="card-img-top" src="img/uchicagodef12-18-19.png">
+				<a href="#" class="pop">
+					<img class="card-img-top" src="img/uchicagodef12-18-19.png">
+				</a>
 				<div class="card-body">
 					<h4 class="card-title">UChicago Deferral Letter - December 2019</h4>
 					<p class="card-text">This was my own deferral letter.</p>
@@ -101,7 +105,9 @@
 		<div class="col-md-4">
 			<!-- -->
 			<div class="card mb-4 box-shadow" >
-				<img class="card-img-top" src="https://realityfail.files.wordpress.com/2011/03/personalized-rejection-letter.jpg?w=407&h=330&zoom=2">
+				<a href="#" class="pop">
+					<img class="card-img-top" src="https://realityfail.files.wordpress.com/2011/03/personalized-rejection-letter.jpg?w=407&h=330&zoom=2">
+				</a>
 				<div class="card-body">
 					<h4 class="card-title">UC Hicago Rejection Letter - March 2010</h4>
 					<p class="card-text">Obtained from a <a href="https://realityfail.wordpress.com/">blog</a> filled with rejections.</p>
@@ -112,7 +118,9 @@
 		<div class="col-md-4">
 			<!-- -->
 			<div class="card mb-4 box-shadow">
-				<img class="card-img-top" src="https://qph.fs.quoracdn.net/main-qimg-c1cec19b1f4def8a7eb7bfae000d2877">
+				<a href="#" class="pop">
+					<img class="card-img-top" src="https://qph.fs.quoracdn.net/main-qimg-c1cec19b1f4def8a7eb7bfae000d2877">
+				</a>
 				<div class="card-body">
 					<h4 class="card-title">MIT Rejection - 2018</h4>
 					<p class="card-text">Quora <a href="https://www.quora.com/What-does-your-college-acceptance-or-rejection-letter-looks-like">link</a>.</p>
@@ -156,7 +164,9 @@
 		<div class="col-md-4">
 			<!-- -->
 			<div class="card mb-4 box-shadow">
-				<img class="card-img-top" src="https://qph.fs.quoracdn.net/main-qimg-80d4f0256c66251b12a7e8c31a7e8433">
+				<a href="#" class="pop">
+					<img class="card-img-top" src="https://qph.fs.quoracdn.net/main-qimg-80d4f0256c66251b12a7e8c31a7e8433">
+				</a>
 				<div class="card-body">
 					<h4 class="card-title">Cornell Rejection - 2018</h4>
 					<p class="card-text">Quora <a href="https://www.quora.com/What-does-your-college-acceptance-or-rejection-letter-looks-like">link</a>.</p>
@@ -166,7 +176,9 @@
 		<div class="col-md-4">
 			<!-- -->
 			<div class="card mb-4 box-shadow">
-				<img class="card-img-top" src="https://qph.fs.quoracdn.net/main-qimg-21054efc7c7bdf2b2d8126ed1fd3f02c">
+				<a href="#" class="pop">
+					<img class="card-img-top" src="https://qph.fs.quoracdn.net/main-qimg-21054efc7c7bdf2b2d8126ed1fd3f02c">
+				</a>
 				<div class="card-body">
 					<h4 class="card-title">University of Michigan Rejection - 2018</h4>
 					<p class="card-text">Quora <a href="https://www.quora.com/What-does-your-college-acceptance-or-rejection-letter-looks-like">link</a>.</p>
@@ -186,6 +198,34 @@
 
 	</div>
 </div> 
+
+<div class="modal fade" id="imagemodal" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-full" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5>Modal</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">×</span>
+                </button>
+            </div>
+            <div class="modal-body p-4" id="result">
+                <img src="" class="imagepreview" style="width: 100%;">
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">OK</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<a href="#" class="pop">
+    <img src="https://qph.fs.quoracdn.net/main-qimg-0314976bbca2b021962600631bb1a8b3" class="img-responsive">
+</a>
+    
+<a href="#" class="pop">
+    <img src="http://upload.wikimedia.org/wikipedia/commons/2/22/Turkish_Van_Cat.jpg" style="width: 400px; height: 264px;">
+</a>
+
 
 <!--- Footer -->
 <footer class="footer-class">
