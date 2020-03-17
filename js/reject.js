@@ -48,12 +48,6 @@ var rejection_letters = [
 // When DOM is loaded
 document.addEventListener('DOMContentLoaded', function () {
 
-    // Removes Preload Screen
-    setTimeout(function() {
-        const preload = document.querySelector(".preload");
-        preload.classList.add("preload-finish");
-    }, 0);
-
     sortByName();
 
 	document.getElementById("DateItem").addEventListener('click', function ()
@@ -214,6 +208,16 @@ function acceptedPolicy() {
         console.log("Session Storage is being used.");
     } 
     else {
-        console.log("You're browser is too old or doesn't support session storage.")
+        console.log("Your browser is too old or doesn't support session storage.")
     }
 }
+
+// Removes preload screen when animation done
+$(function(){
+    $(".typeWriter").on('animationend webkitanimationEnd', function(e){
+        console.log("End");
+        // Removes Preload Screen
+        const preload = document.querySelector(".preload");
+        preload.classList.add("preload-finish");
+    });
+});
