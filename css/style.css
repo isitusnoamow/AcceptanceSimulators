@@ -9,9 +9,10 @@ html, body {
 footer {
   background: #1f2224;
   position: absolute;
-    left: 0;
-    right: 0;
-    width: 100%;
+  left: 0;
+  right: 0;
+  width: 100%;
+  z-index: -1;
 }
 
 .footer-class h2 {
@@ -67,17 +68,6 @@ footer {
   margin: 0 0 1em 0 !important;
   padding-top: 1em !important;
   text-transform: uppercase !important;
-}
-
-/*---Media Queries --*/
-@media (max-width: 992px) {
-
-  }
-@media (max-width: 768px) {
-  
-}
-@media (max-width: 576px) {
-  
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -174,5 +164,17 @@ p {
 }
 
 .about-text {
-  padding: 6.2em;
+  padding: 6.5em 0;
+}
+
+.toast {
+  width: 100%;
+}
+
+.text-primary {
+  color: #ffffff !important;
+}
+
+.btn-primary, .btn-primary:hover, .btn-primary:active, .btn-primary:visited {
+    background-color: #34a58e !important;
 }

@@ -65,7 +65,7 @@ document.addEventListener('DOMContentLoaded', function () {
     
     $('.pop').on('click', modalPopUp);
 
-
+    $('.toast').toast('show');
 });
 
 // Shows an enlarged version of image
