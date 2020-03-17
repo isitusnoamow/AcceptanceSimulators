@@ -48,6 +48,8 @@ var rejection_letters = [
 // When DOM is loaded
 document.addEventListener('DOMContentLoaded', function () {
 
+    preloadScreen();
+
     sortByName();
 
 	document.getElementById("DateItem").addEventListener('click', function ()
@@ -115,6 +117,8 @@ function sortByName() {
 		return a.schoolName.localeCompare(b.schoolName);
 	});
 	console.log(rejection_letters);
+
+
 
     // Determines where ad will be places randomly
     var rando = getRandomInt(4, rejection_letters.length);
@@ -200,8 +204,38 @@ function loadedScreenAlready() {
     }
 }
 
+// Makes the typewriting animation
+// Based on https://stackoverflow.com/a/22266737/9512643
+function animateTyping() {
+
+    var str =  "Remember, Rejection is only a mindset";
+    var i = 0, text; 
+
+    (function type() {
+        if (i == str.length) 
+        {
+
+            // Removes Preload Screen
+            const preload = document.querySelector(".preload");
+            preload.classList.add("preload-finish");
+
+            //loadedScreenAlready(); // Sets session storage "loadedAlready" to true
+            return;
+        }
+
+        text = str.slice(0, ++i);
+        
+        document.getElementById('typewriter').innerHTML = text;
+
+        setTimeout(type, 100);
+    }());
+
+    
+
+}
+
 // Removes preload screen when animation done
-$(function(){
+function preloadScreen () {
     // Only loads the preload screen if it's the first time visiting the website
     if (sessionStorage.getItem('loadedAlready') != "true") {
         const template = `
@@ -209,26 +243,21 @@ $(function(){
         <!-- Based on https://codepen.io/petervandenheuvel/pen/ywBxxY -->
         <div class="preload">
             <div class="container-fluid">
-                <div class="d-flex flex-row justify-content-center">
+                <div class="d-flex flex-row justify-content-center text-center">
                     <h1> Prepare to be Rejected</h1>
                 </div>
-                <div class="d-flex flex-row justify-content-center">
-                    <div class="typeWriter">
-                        <h2> Remember, Rejection is only a mindset</h2>
-                    </div>
+                <div class="d-flex flex-row justify-content-center text-center">
+                    <h2>
+                    <span id="typewriter"></span><span class="cursor">&nbsp</span>
+                    </h2>
                 </div>
             </div>
         </div>`
 
         document.body.insertAdjacentHTML('afterbegin', template);
         
-        $(".typeWriter").on('animationend webkitanimationEnd', function(e){
-            console.log("End");
-            // Removes Preload Screen
-            const preload = document.querySelector(".preload");
-            preload.classList.add("preload-finish");
-        });
+        animateTyping();
 
-        loadedScreenAlready(); // Sets session storage "loadedAlready" to true
+        console.log("End");
     }
-});
+}
