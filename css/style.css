@@ -164,7 +164,7 @@ p {
 }
 
 .about-text {
-  padding: 6.5em 0;
+  padding: 7.5em 0;
 }
 
 .toast {
@@ -189,7 +189,7 @@ p {
   display: flex;
   justify-content: center;
   align-items: center;
-  transition: opacity 1s ease 4s;
+  transition: opacity 0.75s ease 4s;
 }
 
 .preload h1 {
