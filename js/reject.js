@@ -50,22 +50,31 @@ document.addEventListener('DOMContentLoaded', function () {
 
     sortByName();
 
-	document.getElementById("DateItem").addEventListener('click',function ()
+	document.getElementById("DateItem").addEventListener('click', function ()
 	{
 		sortByDate();
         $('.pop').on('click', modalPopUp);
 
 	});
-	document.getElementById("CollegeNameItem").addEventListener('click',function ()
+	document.getElementById("CollegeNameItem").addEventListener('click', function ()
 	{
 		sortByName();
         $('.pop').on('click', modalPopUp);
 
 	}); 
     
+    document.getElementById("acceptButton").addEventListener('click', function ()
+    {
+        acceptedPolicy();
+    }); 
+
     $('.pop').on('click', modalPopUp);
 
-    $('.toast').toast('show');
+    console.log(sessionStorage.getItem('agreePolicy'));
+
+    if (sessionStorage.getItem('agreePolicy') != "true") {
+        $('.toast').toast('show');
+    }
 });
 
 // Shows an enlarged version of image
@@ -190,4 +199,15 @@ function getRandomInt(min, max) {
   min = Math.ceil(min);
   max = Math.floor(max);
   return Math.floor(Math.random() * (max - min)) + min; //The maximum is exclusive and the minimum is inclusive
+}
+
+// Keeps track if user agrees to cookie policy
+function acceptedPolicy() {
+    if (typeof(Storage) !== "undefined") {
+        sessionStorage.setItem('agreePolicy', 'true');
+        console.log("Session Storage is being used.");
+    } 
+    else {
+        console.log("You're browser is too old or doesn't support session storage.")
+    }
 }
