@@ -48,6 +48,12 @@ var rejection_letters = [
 // When DOM is loaded
 document.addEventListener('DOMContentLoaded', function () {
 
+    // Removes Preload Screen
+    setTimeout(function() {
+        const preload = document.querySelector(".preload");
+        preload.classList.add("preload-finish");
+    }, 0);
+
     sortByName();
 
 	document.getElementById("DateItem").addEventListener('click', function ()
