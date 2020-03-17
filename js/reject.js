@@ -48,7 +48,7 @@ var rejection_letters = [
 // When DOM is loaded
 document.addEventListener('DOMContentLoaded', function () {
 
-    preloadScreen();
+    loadPreloadScreen();
 
     sortByName();
 
@@ -208,18 +208,13 @@ function loadedScreenAlready() {
 // Based on https://stackoverflow.com/a/22266737/9512643
 function animateTyping() {
 
-    var str =  "Remember, Rejection is only a mindset";
+    var str =  "Remember, Rejection is just a mindset";
     var i = 0, text; 
 
     (function type() {
         if (i == str.length) 
         {
-
-            // Removes Preload Screen
-            const preload = document.querySelector(".preload");
-            preload.classList.add("preload-finish");
-
-            //loadedScreenAlready(); // Sets session storage "loadedAlready" to true
+            removePreloadScreen();
             return;
         }
 
@@ -234,8 +229,8 @@ function animateTyping() {
 
 }
 
-// Removes preload screen when animation done
-function preloadScreen () {
+// Takes care of loading Preload Screen
+function loadPreloadScreen () {
     // Only loads the preload screen if it's the first time visiting the website
     if (sessionStorage.getItem('loadedAlready') != "true") {
         const template = `
@@ -260,4 +255,12 @@ function preloadScreen () {
 
         console.log("End");
     }
+}
+
+function removePreloadScreen() {
+    // Removes Preload Screen
+    const preload = document.querySelector(".preload");
+    preload.classList.add("preload-finish");
+
+    loadedScreenAlready(); // Sets session storage "loadedAlready" to true
 }
