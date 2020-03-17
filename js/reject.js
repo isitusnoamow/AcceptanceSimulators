@@ -124,8 +124,6 @@ function sortByName() {
             createAd();
         createHTML(rejection_letters[i]);
     }
-
-
 }
 
 // Adds cards to DOM
@@ -164,27 +162,6 @@ function createAd() {
                     <p class="card-text">Here's an ad.</p>
                 </div>
             </div>
-        </div>
-        
-        <div class="col-md-4">
-            <!-- -->
-            <div class="card mb-4 box-shadow">
-                
-                <div class="card-body">
-                    <div id="552529255">
-                        <script type="text/javascript">
-                        try {
-                            window._mNHandle.queue.push(function (){
-                            window._mNDetails.loadTag("552529255", "300x250", "552529255");
-                            });
-                        }
-                        catch (error) {}
-                        </script>
-                    </div>
-                    <h4 class="card-title">Ad</h4>
-                    <p class="card-text">Here's an ad.</p>
-                </div>
-            </div>
         </div>`
 
     // Adds cards to DOM
@@ -212,12 +189,46 @@ function acceptedPolicy() {
     }
 }
 
+// Keeps track if user already visited the website
+function loadedScreenAlready() {
+    if (typeof(Storage) !== "undefined") {
+        sessionStorage.setItem('loadedAlready', 'true');
+        console.log("Session Storage is being used.");
+    } 
+    else {
+        console.log("Your browser is too old or doesn't support session storage.")
+    }
+}
+
 // Removes preload screen when animation done
 $(function(){
-    $(".typeWriter").on('animationend webkitanimationEnd', function(e){
-        console.log("End");
-        // Removes Preload Screen
-        const preload = document.querySelector(".preload");
-        preload.classList.add("preload-finish");
-    });
+    // Only loads the preload screen if it's the first time visiting the website
+    if (sessionStorage.getItem('loadedAlready') != "true") {
+        const template = `
+        <!-- Preload Screen -->
+        <!-- Based on https://codepen.io/petervandenheuvel/pen/ywBxxY -->
+        <div class="preload">
+            <div class="container-fluid">
+                <div class="d-flex flex-row justify-content-center">
+                    <h1> Prepare to be Rejected</h1>
+                </div>
+                <div class="d-flex flex-row justify-content-center">
+                    <div class="typeWriter">
+                        <h2> Remember, Rejection is only a mindset</h2>
+                    </div>
+                </div>
+            </div>
+        </div>`
+
+        document.body.insertAdjacentHTML('afterbegin', template);
+        
+        $(".typeWriter").on('animationend webkitanimationEnd', function(e){
+            console.log("End");
+            // Removes Preload Screen
+            const preload = document.querySelector(".preload");
+            preload.classList.add("preload-finish");
+        });
+
+        loadedScreenAlready(); // Sets session storage "loadedAlready" to true
+    }
 });
