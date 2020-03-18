@@ -1,5 +1,7 @@
+/** Copyright 2020 Jacob Shin **/
+
 // Stores all the data for the letters
-// Note: Dates are stored in the YYYY, MM, DD format, but javascript is weird so the MM is 0 to 11 where 0 is January
+// Note: Dates are stored in the YYYY, MM, DD format, but Javascript is weird so the MM is 0 to 11 where 0 is January
 var rejection_letters = [
     {
     	title: "UChicago Deferral Letter - December 2019",
@@ -72,7 +74,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     $('.pop').on('click', modalPopUp);
 
-    console.log(sessionStorage.getItem('agreePolicy'));
+    //console.log(sessionStorage.getItem('agreePolicy'));
 
     if (sessionStorage.getItem('agreePolicy') != "true") {
         $('.toast').toast('show');
@@ -100,9 +102,9 @@ function sortByDate() {
 		else
 			return 0;
 	});
-	console.log(rejection_letters);	
+	//console.log(rejection_letters);	
 
-    rejection_letters.forEach(createHTML);
+    rejection_letters.forEach(createCard);
 
 }
 
@@ -116,22 +118,68 @@ function sortByName() {
 	rejection_letters.sort(function(a, b) {
 		return a.schoolName.localeCompare(b.schoolName);
 	});
-	console.log(rejection_letters);
-
-
+	//console.log(rejection_letters);
 
     // Determines where ad will be places randomly
     var rando = getRandomInt(4, rejection_letters.length);
     
+    // Make subarrays for each college and then sort each subarray by date
+    var sameName = [];
+
     for (i = 0; i < rejection_letters.length; i++) {
-        if (i == rando)
-            createAd();
-        createHTML(rejection_letters[i]);
+        if (sameName.length < 1)
+            sameName.push(rejection_letters[i]);
+        
+        if (i < rejection_letters.length - 1 && rejection_letters[i].schoolName == rejection_letters[i + 1].schoolName) {
+            sameName.push(rejection_letters[i + 1]);
+        }
+        else {
+            // Sort each subarray by date
+            sameName.sort(function(a, b) {
+                if (a.date < b.date)
+                    return -1;
+                else if (a.date > b.date)
+                    return 1;
+                else
+                    return 0;
+            });
+
+            console.log(sameName);
+
+            // Add heading for each college
+            createCollegeHeading(sameName[0].schoolName);
+
+            sameName.forEach(createCard);
+            sameName = [];
+        }
+
+
+        // if (i == rando)
+        //     createAd();
+        // createCard(rejection_letters[i]);
     }
 }
 
+function createCollegeHeading(collegeName) {
+    const heading = `
+    <div class="col-md-12 text-center">
+        <h3><strong>
+            ${collegeName}
+        </strong>
+        </h3>
+    </div>
+    `;
+    
+    // Adds heading to DOM
+    var name = document.getElementById('cards');
+
+    name.insertAdjacentHTML('beforeend', heading);
+
+
+}
+
 // Adds cards to DOM
-function createHTML(item) {
+function createCard(item) {
 
     // Template of what how a letter should be displayed in the DOM
     const template = `
@@ -156,17 +204,18 @@ function createHTML(item) {
 
 // Adds ads to DOM
 function createAd() {
-    var adTemplate = `<div class="col-md-4">
-            <!-- -->
-            <div class="card mb-4 box-shadow">
-                
-                <div class="card-body">
-                    <input type="hidden" name="IL_IN_ARTICLE">
-                    <h4 class="card-title">Ad</h4>
-                    <p class="card-text">Here's an ad.</p>
-                </div>
+    var adTemplate = `
+    <div class="col-md-4">
+        <!-- -->
+        <div class="card mb-4 box-shadow">
+            
+            <div class="card-body">
+                <input type="hidden" name="IL_IN_ARTICLE">
+                <h4 class="card-title">Ad</h4>
+                <p class="card-text">Here's an ad.</p>
             </div>
-        </div>`
+        </div>
+    </div>`;
 
     // Adds cards to DOM
     var cardDiv = document.getElementById('cards');
@@ -247,13 +296,11 @@ function loadPreloadScreen () {
                     </h2>
                 </div>
             </div>
-        </div>`
+        </div>`;
 
         document.body.insertAdjacentHTML('afterbegin', template);
         
         animateTyping();
-
-        console.log("End");
     }
 }
 
