@@ -154,9 +154,8 @@ function sortByName() {
         }
 
 
-        // if (i == rando)
-        //     createAd();
-        // createCard(rejection_letters[i]);
+        if (i == rando)
+            createAd();
     }
 }
 
