@@ -32,11 +32,18 @@ var rejection_letters = [
     	date: new Date(2018, 0)
     },
     {
+        title: "MIT Rejection - 2019",
+        description: '<a href="https://www.reddit.com/r/ApplyingToCollege/comments/b13iyc/can_someone_send_me_the_mit_rejection_letter_when/">Reddit</a>',
+        url: "https://i.imgur.com/vctd8F8.png",
+        schoolName: "Massachusetts Institute of Technology",
+        date: new Date(2019, 2, 14)
+    },
+    {
         title: "MIT Rejection - 2020",
         description: 'I got rejected.',
         url: "img/mitrej03-14-20.png",
         schoolName: "Massachusetts Institute of Technology",
-        date: new Date(2020, 2, 13, 1, 59)
+        date: new Date(2020, 2, 14, 1, 59)
     },
     {
         title: "Princeton Rejection - March 2017",
@@ -60,6 +67,20 @@ var rejection_letters = [
         date: new Date(2017, 2)
     },
     {
+        title: "Yale Waitlist Rejection - May 2018",
+        description: '<a href="https://www.reddit.com/r/ApplyingToCollege/comments/9s3lg2/anyone_have_a_picture_of_a_tufts_rejection_letter/">Reddit</a>',
+        url: "https://i.imgur.com/0wLVloR.png",
+        schoolName: "Yale University",
+        date: new Date(2018, 4, 11)
+    },
+    {
+        title: "Yale Waitlisted - March 2018",
+        description: '<a href="https://www.reddit.com/r/ApplyingToCollege/comments/9s3lg2/anyone_have_a_picture_of_a_tufts_rejection_letter/">Reddit</a>',
+        url: "https://i.imgur.com/nUics1Z.png",
+        schoolName: "Yale University",
+        date: new Date(2018, 2, 28)
+    },
+    {
         title: "Yale Rejection - March 2017",
         description: '<a href="https://www.quora.com/What-does-the-rejection-letter-from-Oxbridge-Ivy-league-look-like">Quora</a>',
         url: "https://qph.fs.quoracdn.net/main-qimg-0fc30fd30402e4f895035d56ac7a29d0.webp",
@@ -67,11 +88,60 @@ var rejection_letters = [
         date: new Date(2017, 2)
     },
     {
+        title: "Yale Rejection - April 2014",
+        description: '<a href="https://www.reddit.com/r/ApplyingToCollege/comments/7h0gzy/looked_up_a_yale_rejection_letter_to_prepare/">Reddit</a>',
+        url: "https://i.redd.it/qlzx8tlymf101.jpg",
+        schoolName: "Yale University",
+        date: new Date(2014, 3, 10)
+    },
+    {
+        title: "Princeton Rejection - March 2007",
+        description: 'A <a href="https://idrawsometimes.wordpress.com/tag/princeton/">blog</a>',
+        url: "https://idrawsometimes.files.wordpress.com/2011/03/princeton-rejection.jpg",
+        schoolName: "Princeton University",
+        date: new Date(2007, 2, 29)
+    },
+    {
+        title: "Tufts Rejection - 2018",
+        description: '<a href="https://www.reddit.com/r/ApplyingToCollege/comments/9s3lg2/anyone_have_a_picture_of_a_tufts_rejection_letter/">Reddit</a>',
+        url: "https://i.imgur.com/Eg48j9T.jpg",
+        schoolName: "Tufts University",
+        date: new Date(2018, 0)
+    },
+    {
+        title: "Stanford Rejection - March 2010",
+        description: 'A <a href="https://theshallots.wordpress.com/page/2/">blog</a>',
+        url: "https://t3nsor.files.wordpress.com/2010/03/stanford_rejection1.png",
+        schoolName: "Stanford University",
+        date: new Date(2010, 2, 26)
+    },
+    {
+        title: "Stanford Rejection - 2018",
+        description: '<a href="https://www.reddit.com/r/ApplyingToCollege/comments/9s3lg2/anyone_have_a_picture_of_a_tufts_rejection_letter/">Reddit</a>',
+        url: "https://i.imgur.com/1QP5Qt9.png?1",
+        schoolName: "Stanford University",
+        date: new Date(2018, 0)
+    },
+    {
+        title: "Dartmouth ED Rejection - 2018",
+        description: '<a href="https://www.reddit.com/r/ApplyingToCollege/comments/9s3lg2/anyone_have_a_picture_of_a_tufts_rejection_letter/">Reddit</a>',
+        url: "https://i.imgur.com/zsPUefD.png",
+        schoolName: "Dartmouth College",
+        date: new Date(2018, 0)
+    },
+    {
         title: "Georgia Tech Rejection - 2020",
-        description: '',
+        description: 'I got rejected',
         url: "img/gitrej03-14-20.png",
         schoolName: "Georgia Institute of Technology",
-        date: new Date(2020, 2, 13, 1, 59)
+        date: new Date(2020, 2, 14, 1, 59)
+    },
+    {
+        title: "Georgia Tech Rejection - 2019",
+        description: '<a href="">Reddit</a>',
+        url: "https://i.imgur.com/RONOSoO.png",
+        schoolName: "Georgia Institute of Technology",
+        date: new Date(2019, 0)
     },
     {
     	title: "Cornell Rejection - 2018",
@@ -93,7 +163,35 @@ var rejection_letters = [
     	url: "https://qph.fs.quoracdn.net/main-qimg-0314976bbca2b021962600631bb1a8b3",
     	schoolName: "Harvard University",
     	date: new Date(2014, 0)
-    }
+    },
+    {
+        title: "UPenn Rejection - March 2017",
+        description: '<a href="https://www.quora.com/What-does-the-rejection-letter-from-Oxbridge-Ivy-league-look-like">Quora</a>',
+        url: "https://qph.fs.quoracdn.net/main-qimg-ee6c82ce7bdba4545f4dd574194239c3.webp",
+        schoolName: "University of Pennsylvania",
+        date: new Date(2017, 2, 30)
+    },
+    {
+        title: "Northwestern ED Rejection - December 2016",
+        description: 'From <a href="https://imgur.com/gallery/0tPgx">Imgur.com</a>',
+        url: "https://i.imgur.com/YbD2UJm.png",
+        schoolName: "Northwestern University",
+        date: new Date(2017, 2, 30)
+    },
+    {
+        title: "Caltech Rejection - March 1998",
+        description: '<a href="https://www.reddit.com/r/ApplyingToCollege/comments/5y54yi/does_anyone_have_a_copy_of_caltechs_rejection/">Reddit</a>',
+        url: "https://c1.staticflickr.com/1/54/169308344_89305f83e0_b.jpg",
+        schoolName: "California Institute of Technology",
+        date: new Date(1998, 2, 21)
+    },
+    {
+        title: "Rice Deferral - December 2011",
+        description: '<a href="https://www.reddit.com/r/riceuniversity/comments/nh6xf/my_incomplete_admission_story/">Reddit</a>',
+        url: "http://i.imgur.com/OXHin.jpg",
+        schoolName: "Rice University",
+        date: new Date(2011, 11, 15)
+    },
 ];
 
 // When DOM is loaded
