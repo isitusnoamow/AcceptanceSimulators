@@ -126,8 +126,8 @@ p {
   padding: 2em;
 }
 
-.privacy a {
-  color: #34A58E;
+a {
+  color: #34A58E !important;
 }
 
 .modal-full {
@@ -169,6 +169,10 @@ p {
 
 .about-text {
   padding: 7.5em 0;
+}
+
+.about-text h2 {
+  color: #ffffff !important;
 }
 
 .toast {
