@@ -89,9 +89,12 @@ function modalPopUp() {
 }
 
 function sortByDate() {
-    // Clears cards element
+    // Clears cards element and calendar element
     const myNode = document.getElementById("cards");
     myNode.textContent = '';
+    const cal = document.getElementById("calendar");
+    cal.textContent = '';
+
 
 	console.log("Sorting by Date...");
 	rejection_letters.sort(function(a, b) {
@@ -106,12 +109,38 @@ function sortByDate() {
 
     rejection_letters.forEach(createCard);
 
+    // Render Calendar
+    var calendarEl = document.getElementById('calendar');
+
+    var calendar = new FullCalendar.Calendar(calendarEl, {
+        plugins: [ 'dayGrid', 'timeGrid', 'list', 'bootstrap', 'googleCalendar'],
+        // timeZone: 'UTC',
+        themeSystem: 'bootstrap',
+        header: {
+          left: 'prev,next today',
+          center: 'title',
+          right: 'dayGridMonth, timeGridWeek, timeGridDay, listMonth'
+        },
+        weekNumbers: false,
+        eventLimit: true, // allow "more" link when too many events
+        googleCalendarApiKey: 'AIzaSyASTJKj1bu8Msd-za4_AcQJbp7vehxxH0U',
+        events:
+            { 
+                googleCalendarId: 'b04idpn1us2ftqgbucqkm7ncoc@group.calendar.google.com',
+                className: 'gcal-event'
+            }
+    });
+
+    calendar.render();
+
 }
 
 function sortByName() {
-    // Clears cards element
+    // Clears cards and calendar element
     const myNode = document.getElementById("cards");
     myNode.textContent = '';
+    const cal = document.getElementById("calendar");
+    cal.textContent = '';
 
     // Sorts list of letters based on college name
 	console.log("Sorting by Name...");
@@ -154,8 +183,8 @@ function sortByName() {
         }
 
 
-        if (i == rando)
-            createAd();
+        // if (i == rando)
+        //     createAd();
     }
 }
 

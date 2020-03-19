@@ -70,6 +70,10 @@ footer {
   text-transform: uppercase !important;
 }
 
+.amazon-title h2 {
+  color: #ffffff !important;
+}
+
 h1, h2, h3, h4, h5, h6 {
   font-family: "Source Sans Pro", Helvetica, sans-serif;
   font-weight: 300;
@@ -87,7 +91,7 @@ h1 {
 
 h2 {
   font-size: 1.25em;
-  color: #FFFFFF !important;
+  color: #212529  !important;
 }
 
 h3 {
@@ -169,6 +173,7 @@ p {
 
 .toast {
   width: 100%;
+  z-index: 1000;
 }
 
 .text-primary {
@@ -178,6 +183,11 @@ p {
 .btn-primary, .btn-primary:hover, .btn-primary:active, .btn-primary:visited {
     background-color: #34a58e !important;
 }
+
+.dropdown .dropdown-menu .dropdown-item:active, .dropdown .dropdown-menu .dropdown-item:hover {
+  background-color: #34a58e !important;
+}
+
 
 /* Preload Screen */
 .preload {
@@ -201,6 +211,7 @@ p {
 .preload h2 {
   padding: 0;
   margin: 0;
+  color: #ffffff !important;
 }
 
 .preload span {
@@ -227,4 +238,9 @@ p {
   99% { background-color: transparent; }
   100% { background-color: #34a58e; }
 
+}
+
+#calendar {
+  max-width: 800px;
+  margin: 40px auto;
 }
