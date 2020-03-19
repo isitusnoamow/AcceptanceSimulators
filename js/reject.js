@@ -52,7 +52,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     loadPreloadScreen();
 
-    sortByName();
+    sortByDate();
 
 	document.getElementById("DateItem").addEventListener('click', function ()
 	{
@@ -124,11 +124,16 @@ function sortByDate() {
         weekNumbers: false,
         eventLimit: true, // allow "more" link when too many events
         googleCalendarApiKey: 'AIzaSyASTJKj1bu8Msd-za4_AcQJbp7vehxxH0U',
-        events:
+        eventSources: [
             { 
                 googleCalendarId: 'b04idpn1us2ftqgbucqkm7ncoc@group.calendar.google.com',
-                className: 'gcal-event'
+                className: 'a2c-calendar'
+            },
+            {
+                googleCalendarId: 'f4eljsahtds01ruu8gir5a826c@group.calendar.google.com',
+                className: 'past-dates'
             }
+        ]
     });
 
     calendar.render();
