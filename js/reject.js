@@ -188,7 +188,7 @@ var rejection_letters = [
     {
         title: "Rice Deferral - December 2011",
         description: '<a href="https://www.reddit.com/r/riceuniversity/comments/nh6xf/my_incomplete_admission_story/">Reddit</a>',
-        url: "http://i.imgur.com/OXHin.jpg",
+        url: "https://i.imgur.com/OXHin.jpg",
         schoolName: "Rice University",
         date: new Date(2011, 11, 15)
     },
