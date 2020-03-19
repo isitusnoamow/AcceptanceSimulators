@@ -130,6 +130,10 @@ a {
   color: #34A58E !important;
 }
 
+img {
+  cursor: pointer;
+}
+
 .modal-full {
     min-width: 90%;
     margin: 0 auto;

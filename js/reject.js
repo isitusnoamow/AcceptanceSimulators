@@ -371,9 +371,7 @@ function createCard(item) {
     const template = `
         <div class="col-md-4">
             <div class="card mb-4 box-shadow" >
-   
                 <img class="pop card-img-top" src="${item.url}">
-   
                 <div class="card-body">
                     <h4 class="card-title">${item.title}</h4>
                     <p class="card-text">${item.description}</p>
