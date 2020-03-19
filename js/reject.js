@@ -231,7 +231,7 @@ document.addEventListener('DOMContentLoaded', function () {
 // Shows an enlarged version of image
 // Based on https://stackoverflow.com/a/29605535/9512643
 function modalPopUp() {   
-    $('.imagepreview').attr('src', $(this).find('img').attr('src'));
+    $('.imagepreview').attr('src', $(this).attr('src'));
     $('#imagemodal').modal('show');
 }
 
@@ -371,9 +371,9 @@ function createCard(item) {
     const template = `
         <div class="col-md-4">
             <div class="card mb-4 box-shadow" >
-                <a href="#" class="pop">
-                    <img class="card-img-top" src="${item.url}">
-                </a>
+   
+                <img class="pop card-img-top" src="${item.url}">
+   
                 <div class="card-body">
                     <h4 class="card-title">${item.title}</h4>
                     <p class="card-text">${item.description}</p>
