@@ -16,6 +16,13 @@ var rejection_letters = [
     	url: "https://realityfail.files.wordpress.com/2011/03/personalized-rejection-letter.jpg?w=407&h=330&zoom=2",
     	schoolName: "University of Chicago",
     	date: new Date(2010, 2)
+    },
+    {
+        title: "UCHicago Rejection Letter - March 2020",
+        description: 'This is my own rejection letter :(',
+        url: "img/uchicagorej03-13-20.png",
+        schoolName: "University of Chicago",
+        date: new Date(2020, 2, 13)
     }, 
     {
     	title: "MIT Rejection - 2018",
@@ -23,6 +30,48 @@ var rejection_letters = [
     	url: "https://qph.fs.quoracdn.net/main-qimg-c1cec19b1f4def8a7eb7bfae000d2877",
     	schoolName: "Massachusetts Institute of Technology",
     	date: new Date(2018, 0)
+    },
+    {
+        title: "MIT Rejection - 2020",
+        description: 'I got rejected.',
+        url: "img/mitrej03-14-20.png",
+        schoolName: "Massachusetts Institute of Technology",
+        date: new Date(2020, 2, 13, 1, 59)
+    },
+    {
+        title: "Princeton Rejection - March 2017",
+        description: '<a href="https://www.quora.com/What-does-the-rejection-letter-from-Oxbridge-Ivy-league-look-like">Quora</a>',
+        url: "https://qph.fs.quoracdn.net/main-qimg-6a8aca72b90caccd148a33bc31930cd9.webp",
+        schoolName: "Princeton University",
+        date: new Date(2017, 2, 30)
+    },
+    {
+        title: "Columbia Rejection - March 2017",
+        description: '<a href="https://www.quora.com/What-does-the-rejection-letter-from-Oxbridge-Ivy-league-look-like">Quora</a>',
+        url: "https://qph.fs.quoracdn.net/main-qimg-afe3e175d82169f506616f820b79d1fe.webp",
+        schoolName: "Columbia University",
+        date: new Date(2017, 2)
+    },
+    {
+        title: "Harvard Rejection - March 2017",
+        description: '<a href="https://www.quora.com/What-does-the-rejection-letter-from-Oxbridge-Ivy-league-look-like">Quora</a>',
+        url: "https://qph.fs.quoracdn.net/main-qimg-c2c34158d90073b239fd90308d4662f2.webp",
+        schoolName: "Harvard University",
+        date: new Date(2017, 2)
+    },
+    {
+        title: "Yale Rejection - March 2017",
+        description: '<a href="https://www.quora.com/What-does-the-rejection-letter-from-Oxbridge-Ivy-league-look-like">Quora</a>',
+        url: "https://qph.fs.quoracdn.net/main-qimg-0fc30fd30402e4f895035d56ac7a29d0.webp",
+        schoolName: "Yale University",
+        date: new Date(2017, 2)
+    },
+    {
+        title: "Georgia Tech Rejection - 2020",
+        description: '',
+        url: "img/gitrej03-14-20.png",
+        schoolName: "Georgia Institute of Technology",
+        date: new Date(2020, 2, 13, 1, 59)
     },
     {
     	title: "Cornell Rejection - 2018",
@@ -95,6 +144,9 @@ function sortByDate() {
     const cal = document.getElementById("calendar");
     cal.textContent = '';
 
+    const mainTitle = document.getElementById("main-title");
+    mainTitle.textContent = 'Upcoming Rejections...';
+
 
 	console.log("Sorting by Date...");
 	rejection_letters.sort(function(a, b) {
@@ -146,6 +198,9 @@ function sortByName() {
     myNode.textContent = '';
     const cal = document.getElementById("calendar");
     cal.textContent = '';
+
+    const mainTitle = document.getElementById("main-title");
+    mainTitle.textContent = 'Rejection and Deferral Letters';
 
     // Sorts list of letters based on college name
 	console.log("Sorting by Name...");
