@@ -11,6 +11,9 @@ document.addEventListener('DOMContentLoaded', function () {
     if (sessionStorage.getItem('agreePolicy') != "true") {
         $('.toast').toast('show');
     }
+    else {
+        $('.toast').toast('hide');
+    }
 });
 
 
