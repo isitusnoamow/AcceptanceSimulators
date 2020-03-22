@@ -192,6 +192,14 @@ var rejection_letters = [
         schoolName: "Rice University",
         date: new Date(2011, 11, 15)
     },
+    {
+        title: "Washington University Rejection - March 2020",
+        description: 'From a reddit user',
+        url: "https://i.imgur.com/4qBFnFl.png",
+        schoolName: "Washington University in St. Louis",
+        date: new Date(2020, 2, 12)
+    },
+
 ];
 
 // When DOM is loaded
