@@ -199,6 +199,14 @@ var rejection_letters = [
         schoolName: "Washington University in St. Louis",
         date: new Date(2020, 2, 12)
     },
+    {
+        title: "John Hopkins Rejection - March 2020",
+        description: 'From a reddit user',
+        url: "https://i.imgur.com/NIa6m2R.png",
+        schoolName: "John Hopkins University",
+        date: new Date(2020, 2, 13)
+    },
+    
 
 ];
 
