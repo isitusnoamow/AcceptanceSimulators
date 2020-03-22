@@ -38,6 +38,10 @@ footer {
 /*    border: 3px solid green;
 */}
 
+.card img:hover {
+    cursor: pointer;
+}
+
 .sort {
   margin-top: 1em !important;
 /*  border: 3px solid green;
