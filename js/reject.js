@@ -1,6 +1,6 @@
 // When DOM is loaded
 document.addEventListener('DOMContentLoaded', function () {
-
+     $('.toast').hide();
     loadPreloadScreen();
     loadCalendar();
     document.getElementById("acceptButton").addEventListener('click', function ()
@@ -10,9 +10,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
     if (sessionStorage.getItem('agreePolicy') != "true") {
         $('.toast').toast('show');
-    }
-    else {
-        $(".toast").toast('hide');
     }
 });
 

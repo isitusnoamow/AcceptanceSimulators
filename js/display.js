@@ -197,6 +197,8 @@ var rejection_letters = [
 // When DOM is loaded
 document.addEventListener('DOMContentLoaded', function () {
 
+    $('.toast').hide();
+
     loadPreloadScreen();
 
     sortByName();
@@ -219,9 +221,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
     if (sessionStorage.getItem('agreePolicy') != "true") {
         $('.toast').toast('show');
-    }
-    else {
-        $(".toast").toast('hide');
     }
 });
 
