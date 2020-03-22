@@ -23,23 +23,23 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
 	<script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
-	<script src="js/reject.js"></script>
-	<link href="css/style.css" rel="stylesheet">
+	<script src="/js/reject.js"></script>
+	<link href="/css/style.css" rel="stylesheet">
 	<link rel="shortcut icon" type="image/png" href="img/logo.png"/>
 
 	<!-- Calendar -->
-	<link href='fullcalendar/core/main.css' rel='stylesheet' />
-	<link href='fullcalendar/daygrid/main.css' rel='stylesheet' />
-	<link href='fullcalendar/timegrid/main.css' rel='stylesheet'/>
-	<link href='fullcalendar/list/main.css' rel='stylesheet'/>
-	<link href='fullcalendar/bootstrap/main.css' rel='stylesheet'/>	
+	<link href='/fullcalendar/core/main.css' rel='stylesheet' />
+	<link href='/fullcalendar/daygrid/main.css' rel='stylesheet' />
+	<link href='/fullcalendar/timegrid/main.css' rel='stylesheet'/>
+	<link href='/fullcalendar/list/main.css' rel='stylesheet'/>
+	<link href='/fullcalendar/bootstrap/main.css' rel='stylesheet'/>	
 
-	<script src='fullcalendar/core/main.js'></script>
-	<script src='fullcalendar/daygrid/main.js'></script>
-	<script src='fullcalendar/timegrid/main.js'></script>
-	<script src='fullcalendar/list/main.js'></script>
-	<script src='fullcalendar/google-calendar/main.js'></script>
-	<script src='fullcalendar/bootstrap/main.js'></script>
+	<script src='/fullcalendar/core/main.js'></script>
+	<script src='/fullcalendar/daygrid/main.js'></script>
+	<script src='/fullcalendar/timegrid/main.js'></script>
+	<script src='/fullcalendar/list/main.js'></script>
+	<script src='/fullcalendar/google-calendar/main.js'></script>
+	<script src='/fullcalendar/bootstrap/main.js'></script>
 
 
 </head>
@@ -56,35 +56,15 @@
 			<span class="navbar-text">The time draws nigh. College decision are upon us. <strong>Prepare to be rejected.</strong></span>
 			<ul class="navbar-nav ml-auto">
 				<li class="nav-item">
-					<a class="nav-link" href="/">Rejection</a>
+					<a class="nav-link" href="/">Schools</a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link" href="accept.html">Acceptance</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="about.html">ABOUT <i class="fa fa-info-circle"></i></a>
+					<a class="nav-link" href="/html/about.html">ABOUT <i class="fa fa-info-circle"></i></a>
 				</li>
 			</ul>
 		</div>
 	</div>
 </nav>
-
-<!--- Sort By Button -->
-<div class="container-fluid padding">
-	<div class="row sort text-right">
-		<div class="col-12">
-			<div class="dropdown">
-			  <button class="btn btn-lg btn-outline-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-			    Sort By
-			  </button>
-			  <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
-			    <a class="dropdown-item" id="DateItem">Date</a>
-			    <a class="dropdown-item" id="CollegeNameItem">College Name (Alphabetical)</a>
-			  </div>
-			</div>
-		</div>
-	</div>
-</div>
 
 <!--- Title -->
 <div class="container-fluid padding">
@@ -98,30 +78,64 @@
 <!-- Calendar -->
 <div id="calendar"></div>
 
-<!--- Cards -->
+<!-- College Logos -->
 <div class="container-fluid padding">
-	<div class="row justify-content-around" id="cards">
+	<div class="row">
+		<div class="col-md-3 ">
+			<a href="/html/caltech.html"><img src="/img/caltech.png" class="mx-auto d-block img-fluid pop" alt="Caltech Logo" ></a>
+		</div>
+		<div class="col-md-3">
+			<a href="/html/columbia.html"><img src="/img/columbia.png" class="mx-auto d-block img-fluid pop" alt="Columbia Logo" ></a>
+		</div>
+		<div class="col-md-3">
+			<a href="/html/cornell.html"><img src="/img/cornell.png" class="mx-auto d-block img-fluid pop" alt="Cornell Logo" ></a>
+		</div>
+		<div class="col-md-3">
+			<a href="/html/dartmouth.html"><img src="/img/dartmouth.png" class="mx-auto d-block img-fluid pop" alt="Dartmouth Logo" ></a>
+		</div>
+		<div class="col-md-3">
+			<a href="/html/gt.html"><img src="/img/gt.png" class="mx-auto d-block img-fluid pop" alt="GeorgiaTech Logo" ></a>
+		</div>
+		<div class="col-md-3">
+			<a href="/html/harvard.html"><img src="/img/harvard.png" class="mx-auto d-block img-fluid pop" alt="Harvard Logo" ></a>
+		</div>
+		<div class="col-md-3">
+			<a href="/html/mit.html"><img src="/img/mit.png" class="mx-auto d-block img-fluid pop" alt="MIT Logo" ></a>
+		</div>
+		<div class="col-md-3">
+			<a href="/html/northwestern.html"><img src="/img/northwestern.png" class="mx-auto d-block img-fluid pop" alt="Northwestern Logo" ></a>
+		</div>
+		<div class="col-md-3">
+			<a href="/html/princeton.html"><img src="/img/princeton.png" class="mx-auto d-block img-fluid pop" alt="Princeton Logo" ></a>
+		</div>
+		<div class="col-md-3">
+			<a href="/html/rice.html"><img src="/img/rice.png" class="mx-auto d-block img-fluid pop" alt="Rice Logo" ></a>
+		</div>
+		<div class="col-md-3">
+			<a href="/html/stanford.html"><img src="/img/stanford.png" class="mx-auto d-block img-fluid pop" alt="Stanford Logo" ></a>
+		</div>
+		<div class="col-md-3">
+			<a href="/html/tufts.html"><img src="/img/tufts.png" class="mx-auto d-block img-fluid pop" alt="Tufts Logo" ></a>
+		</div>
+		<div class="col-md-3">
+			<a href="/html/uchicago.html"><img src="/img/uchicago.png" class="mx-auto d-block img-fluid pop" alt="UChicago Logo" ></a>
+		</div>
+		<div class="col-md-3">
+			<a href="/html/umich.html"><img src="/img/umich.png" class="mx-auto d-block img-fluid pop" alt="UMich Logo" ></a>
+		</div>
+		<div class="col-md-3">
+			<a href="/html/upenn.html"><img src="/img/upenn.png" class="mx-auto d-block img-fluid pop" alt="UPenn Logo" ></a>
+		</div>
+		<div class="col-md-3">
+			<a href="/html/yale.html"><img src="/img/yale.png" class="mx-auto d-block img-fluid pop" alt="Yale Logo" ></a>
+		</div>
 	</div>
 </div> 
 
-<div class="modal fade" id="imagemodal" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered modal-full" role="document">
-        <div class="modal-content">
-            <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">×</span>
-                </button>
-            </div>
-            <div class="modal-body p-4" id="result">
-                <img src="" class="imagepreview" style="width: 100%;">
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-            </div>
-        </div>
-    </div>
-</div>
 
+
+
+<!-- Cookie Message -->
 <div class="container">
 	<div class="row">
   <div class="toast"  style="position: fixed; bottom: 0; right: 0; margin: 1em; background-color: #1f2224" data-autohide="false">
@@ -143,7 +157,7 @@
 		  		<a class="btn btn-secondary" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" role="button">Decline</a>
 		  	</div>
 		  	<div class="col-4 text-center">
-		  		<a class="btn btn-secondary" href="policy.html" role="button">Policy</a>
+		  		<a class="btn btn-secondary" href="/html/policy.html" role="button">Policy</a>
 		  	</div>
 		  	
 		  </div>
@@ -159,27 +173,31 @@
 	<div class="container-fluid padding">
 		<div class="row text-center">
 			<!--- Add ad here -->
+
 			<div class="col-12">
-				<h2 class="amazon-title">Here's an Amazon ad:</h2>
+				<h2 style="color: #ffffff !important;" class="amazon-title">Here are some ads:</h2>
 			</div>
-			<div class="col-12">
-				<center class="amazon-ads">
+			<div class="col-md-3">
+				<div class="other-ads">
+					<script data-cfasync="false" type="text/javascript" src="https://www.geniusdexchange.com/a/display.php?r=3026555"></script> 
+				</div>
+			</div>
+			<div class="col-md-6">
+				<div class="amazon-ads">
 					<div id="amzn-assoc-ad-b1f3644a-00fd-43b6-b24b-8f15f23fae05"></div><script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&adInstanceId=b1f3644a-00fd-43b6-b24b-8f15f23fae05"></script>
-				</center>
+				</div>
+			</div>
+
+			<div class="col-md-3">
+				<div class="other-ads">
+					<script data-cfasync='false' type='text/javascript' src='//p388133.clksite.com/adServe/banners?tid=388133_762075_0'></script>
+				</div>
 			</div>
 			<div class="col-12 privacy">
-				<a href="policy.html">Privacy Policy</a>
+				<a href="/html/policy.html">Privacy Policy</a>
 			</div>
 		</div>
 	</div>
 </footer>
-
-<!-- Infolinks -->
-<!-- <script type="text/javascript">
-var infolinks_pid = 3241267;
-var infolinks_wsid = 0;
-</script>
-<script type="text/javascript" src="https://resources.infolinks.com/js/infolinks_main.js"></script>
- -->
 </body>
 </html>
