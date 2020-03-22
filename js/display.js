@@ -220,6 +220,9 @@ document.addEventListener('DOMContentLoaded', function () {
     if (sessionStorage.getItem('agreePolicy') != "true") {
         $('.toast').toast('show');
     }
+    else {
+        $(".toast").toast('hide');
+    }
 });
 
 // Shows an enlarged version of image
@@ -318,6 +321,7 @@ function createCard(item) {
 
 // Keeps track if user agrees to cookie policy
 function acceptedPolicy() {
+    $(".toast").toast('hide');
     if (typeof(Storage) !== "undefined") {
         sessionStorage.setItem('agreePolicy', 'true');
         console.log("Session Storage is being used.");
