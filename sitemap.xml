@@ -9,17 +9,97 @@
 
 <url>
   <loc>https://decisionletters.com/</loc>
-  <lastmod>2020-03-15T13:59:02+00:00</lastmod>
+  <lastmod>2020-03-22T02:37:51+00:00</lastmod>
   <priority>1.00</priority>
 </url>
 <url>
-  <loc>https://decisionletters.com/accept.html</loc>
-  <lastmod>2020-03-15T13:59:02+00:00</lastmod>
+  <loc>https://decisionletters.com/html/about.html</loc>
+  <lastmod>2020-03-22T02:37:51+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://decisionletters.com/policy.html</loc>
-  <lastmod>2020-03-15T13:59:02+00:00</lastmod>
+  <loc>https://decisionletters.com/html/caltech.html</loc>
+  <lastmod>2020-03-22T02:37:51+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://decisionletters.com/html/columbia.html</loc>
+  <lastmod>2020-03-22T02:37:51+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://decisionletters.com/html/cornell.html</loc>
+  <lastmod>2020-03-22T02:37:51+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://decisionletters.com/html/dartmouth.html</loc>
+  <lastmod>2020-03-22T02:37:51+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://decisionletters.com/html/gt.html</loc>
+  <lastmod>2020-03-22T02:37:51+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://decisionletters.com/html/harvard.html</loc>
+  <lastmod>2020-03-22T02:37:51+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://decisionletters.com/html/mit.html</loc>
+  <lastmod>2020-03-22T02:37:51+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://decisionletters.com/html/northwestern.html</loc>
+  <lastmod>2020-03-22T02:37:51+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://decisionletters.com/html/princeton.html</loc>
+  <lastmod>2020-03-22T02:37:51+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://decisionletters.com/html/rice.html</loc>
+  <lastmod>2020-03-22T02:37:51+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://decisionletters.com/html/stanford.html</loc>
+  <lastmod>2020-03-22T02:37:51+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://decisionletters.com/html/tufts.html</loc>
+  <lastmod>2020-03-22T02:37:51+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://decisionletters.com/html/uchicago.html</loc>
+  <lastmod>2020-03-22T02:37:51+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://decisionletters.com/html/umich.html</loc>
+  <lastmod>2020-03-22T02:37:51+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://decisionletters.com/html/upenn.html</loc>
+  <lastmod>2020-03-22T02:37:51+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://decisionletters.com/html/yale.html</loc>
+  <lastmod>2020-03-22T02:37:51+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://decisionletters.com/html/policy.html</loc>
+  <lastmod>2020-03-22T02:37:51+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 
