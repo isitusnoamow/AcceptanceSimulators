@@ -7,9 +7,10 @@ document.addEventListener('DOMContentLoaded', function () {
         acceptedPolicy();
     }); 
 
-    //console.log(sessionStorage.getItem('agreePolicy'));
+    var cookieValue = document.cookie.replace(/(?:(?:^|.*;\s*)agreePolicy\s*\=\s*([^;]*).*$)|^.*$/, "$1");
+    console.log(cookieValue);
 
-    if (sessionStorage.getItem('agreePolicy') != "true") {
+    if (cookieValue != "true") {
         $('.toast').toast('show');
     }
     else {
@@ -21,24 +22,22 @@ document.addEventListener('DOMContentLoaded', function () {
 // Keeps track if user agrees to cookie policy
 function acceptedPolicy() {
     $(".toast").toast('hide');
-    if (typeof(Storage) !== "undefined") {
-        sessionStorage.setItem('agreePolicy', 'true');
-        console.log("Session Storage is being used.");
-    } 
-    else {
-        console.log("Your browser is too old or doesn't support session storage.")
+
+    var cookieValue = document.cookie.replace(/(?:(?:^|.*;\s*)agreePolicy\s*\=\s*([^;]*).*$)|^.*$/, "$1");
+    console.log(cookieValue);
+    if (cookieValue != "true") {
+    	document.cookie = "agreePolicy=true"
     }
 }
 
 // Keeps track if user already visited the website
 function loadedScreenAlready() {
-    if (typeof(Storage) !== "undefined") {
-        sessionStorage.setItem('loadedAlready', 'true');
-        console.log("Session Storage is being used.");
-    } 
-    else {
-        console.log("Your browser is too old or doesn't support session storage.")
+    var cookieValue = document.cookie.replace(/(?:(?:^|.*;\s*)loadedAlready\s*\=\s*([^;]*).*$)|^.*$/, "$1");
+    console.log(cookieValue);
+    if (cookieValue != "true") {
+    	document.cookie = "loadedAlready=true"
     }
+
 }
 
 // Makes the typewriting animation
@@ -68,8 +67,11 @@ function animateTyping() {
 
 // Takes care of loading Preload Screen
 function loadPreloadScreen () {
+    var cookieValue = document.cookie.replace(/(?:(?:^|.*;\s*)loadedAlready\s*\=\s*([^;]*).*$)|^.*$/, "$1");
+    console.log(cookieValue);
+
     // Only loads the preload screen if it's the first time visiting the website
-    if (sessionStorage.getItem('loadedAlready') != "true") {
+    if (cookieValue != "true") {
         const template = `
         <!-- Preload Screen -->
         <!-- Based on https://codepen.io/petervandenheuvel/pen/ywBxxY -->
