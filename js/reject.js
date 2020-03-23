@@ -1,16 +1,21 @@
 // When DOM is loaded
 document.addEventListener('DOMContentLoaded', function () {
-     $('.toast').hide();
+    
     loadPreloadScreen();
     loadCalendar();
+    if (sessionStorage.getItem('agreePolicy') != "true") {
+        $('.toast').toast('show');
+        console.log("Showing toast");
+    }
+    else {
+        $('.toast').hide();
+    }
     document.getElementById("acceptButton").addEventListener('click', function ()
     {
         acceptedPolicy();
     }); 
 
-    if (sessionStorage.getItem('agreePolicy') != "true") {
-        $('.toast').toast('show');
-    }
+
 });
 
 
