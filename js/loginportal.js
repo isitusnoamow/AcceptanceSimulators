@@ -26,7 +26,7 @@ function animateUsername(callback) {
 		moveCursorToEnd(elem);        
 		setTimeout(type, 100);
     }());
-    setTimeout(callback, 3000);
+    setTimeout(callback, 2000);
 }
 
 function animatePassword() {
