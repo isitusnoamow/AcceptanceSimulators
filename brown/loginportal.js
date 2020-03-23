@@ -10,7 +10,7 @@ function animateUsername(callback) {
 	var str = ""
 	
 
-	var str =  "JohnDoe@example.com";
+	var str =  "johndoe@example.com";
     var i = 0, text; 
 
     (function type() {
@@ -26,9 +26,9 @@ function animateUsername(callback) {
         elem.select();
 		elem.setAttribute("value", text);
 		moveCursorToEnd(elem);
-		setTimeout(type, 500);
+		setTimeout(type, 100);
     }());
-    setTimeout(callback, 3400);
+    setTimeout(callback, 3000);
 }
 
 function animatePassword() {
@@ -50,13 +50,15 @@ function animatePassword() {
 		elem.focus();
 		elem.select();
 		elem.setAttribute("value", text);
-		moveCursorToEnd(elem);
+    	moveCursorToEnd(elem);
         setTimeout(type, 100);
     }());
 }
 
-// https://css-tricks.com/snippets/javascript/move-cursor-to-end-of-input/
 function moveCursorToEnd(el) {
+    console.log(el.selectionStart)
+    el.select();
+    el.focus();
     if (typeof el.selectionStart == "number") {
         el.selectionStart = el.selectionEnd = el.value.length;
     } else if (typeof el.createTextRange != "undefined") {
