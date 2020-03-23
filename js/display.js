@@ -206,7 +206,34 @@ var rejection_letters = [
         schoolName: "John Hopkins University",
         date: new Date(2020, 2, 13)
     },
-    
+    {
+        title: "Georgetown Rejection - March 2020",
+        description: 'From another random person',
+        url: "/img/georgetownrej03-20-20.png",
+        schoolName: "Georgetown University",
+        date: new Date(2020, 2, 20)
+    },
+    {
+        title: "UCLA Rejection - March 2020",
+        description: 'From another random person',
+        url: "/img/uclarej03-20-20.png",
+        schoolName: "University of California, Los Angeles",
+        date: new Date(2020, 2, 20)
+    },
+    {
+        title: "Brown ED Rejection - December 2019",
+        description: 'From another random person',
+        url: "/img/brownrej12-12-19.png",
+        schoolName: "Brown University",
+        date: new Date(2020, 11, 12)
+    },
+    {
+        title: "Brown ED Deferral - December 2019",
+        description: 'From my bro',
+        url: "/img/browndef12-12-19.png",
+        schoolName: "Brown University",
+        date: new Date(2020, 11, 12)
+    },
 
 ];
 
