@@ -234,7 +234,13 @@ var rejection_letters = [
         schoolName: "Brown University",
         date: new Date(2020, 11, 12)
     },
-
+    {
+        title: "Boston University Rejection - December 2019",
+        description: 'From a random person',
+        url: "/img/bostonurej03-21-20",
+        schoolName: "Boston University",
+        date: new Date(2020, 2, 21)
+    },
 ];
 
 // When DOM is loaded
