@@ -193,6 +193,10 @@ img {
   color: #ffffff !important;
 }
 
+.about-text a {
+  color: #34a58e !important;
+}
+
 .toast {
   width: 100%;
   z-index: 100;
