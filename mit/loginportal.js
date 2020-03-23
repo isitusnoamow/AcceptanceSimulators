@@ -26,7 +26,7 @@ function animateUsername(callback) {
 		moveCursorToEnd(elem);        
 		setTimeout(type, 100);
     }());
-    setTimeout(callback, 2000);
+    setTimeout(callback, 1000);
 }
 
 function animatePassword() {
@@ -45,6 +45,8 @@ function animatePassword() {
         text = str.slice(0, ++i);
         
 		var elem = document.getElementById("password");
+		elem.focus();
+		elem.select();
 		elem.setAttribute("value", text);
 		moveCursorToEnd(elem);
         setTimeout(type, 100);
