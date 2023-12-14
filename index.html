@@ -1,21 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-	<!-- Google Analytics - Global site tag (gtag.js) -->
-	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-160000807-1"></script>
-	<script>
-	  window.dataLayer = window.dataLayer || [];
-	  function gtag(){dataLayer.push(arguments);}
-	  gtag('js', new Date());
-
-	  gtag('config', 'UA-160000807-1');
-	</script>
-
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Prepare to be Rejected</title>
-	<meta name="description" content="Rejection is just a mindset. Get in the mindset of rejection by looking at some rejection letters!">
-	<meta name="keywords" content="college, university, acceptance letters, college decision, rejection letters">
+	<title>Acceptance Simulator</title>
 
 	<!-- Dependencies -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
@@ -23,198 +12,111 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
 	<script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
-	<script src="/js/reject.js"></script>
 	<link href="/css/style.css" rel="stylesheet">
-	<link rel="shortcut icon" type="image/png" href="img/logo.png"/>
-
-	<!-- Calendar -->
-	<link href='/fullcalendar/core/main.css' rel='stylesheet' />
-	<link href='/fullcalendar/daygrid/main.css' rel='stylesheet' />
-	<link href='/fullcalendar/timegrid/main.css' rel='stylesheet'/>
-	<link href='/fullcalendar/list/main.css' rel='stylesheet'/>
-	<link href='/fullcalendar/bootstrap/main.css' rel='stylesheet'/>	
-
-	<script src='/fullcalendar/core/main.js'></script>
-	<script src='/fullcalendar/daygrid/main.js'></script>
-	<script src='/fullcalendar/timegrid/main.js'></script>
-	<script src='/fullcalendar/list/main.js'></script>
-	<script src='/fullcalendar/google-calendar/main.js'></script>
-	<script src='/fullcalendar/bootstrap/main.js'></script>
+	<link rel="shortcut icon" type="image/png" href="img/logo.png" />
 
 
 </head>
+
 <body>
-
-<!-- Navigation -->
-<nav class="navbar navbar-expand-sm sticky-top navbar-dark navbar-default"> 
-<div class="container-fluid">
-		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
-			<span class="navbar-toggler-icon"></span>
-		</button>
-
-		<div class="collapse navbar-collapse" id="navbarResponsive">
-			<span class="navbar-text">The time draws nigh. College decision are upon us. <strong>Prepare to be rejected.</strong></span>
-			<ul class="navbar-nav ml-auto">
-				<li class="nav-item">
-					<a class="nav-link" href="/">Rejection Letters</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Acceptance Letters</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="/about.html">ABOUT <i class="fa fa-info-circle"></i></a>
-				</li>
-			</ul>
-		</div>
-	</div>
-</nav>
-
-<!--- Title -->
-<div class="container-fluid padding">
-	<div class="row text-center">
-		<div class="col-md-12">
-			<h1 id="main-title">Rejection and Deferral Letters</h1>
-		</div>
-	</div>
-</div>
-
-<!-- College Logos -->
-<div class="container-fluid padding">
-	<div class="row">
-		<div class="col-md-3 ">
-			<a href="/brown.html"><img src="/img/brown.png" class="mx-auto d-block img-fluid pop" alt="Brown Logo" ></a>
-		</div>
-		<div class="col-md-3 ">
-			<a href="/bostonu.html"><img src="/img/bostonu.png" class="mx-auto d-block img-fluid pop" alt="Boston University Logo" ></a>
-		</div>
-		<div class="col-md-3 ">
-			<a href="/caltech.html"><img src="/img/caltech.png" class="mx-auto d-block img-fluid pop" alt="Caltech Logo" ></a>
-		</div>
-		<div class="col-md-3">
-			<a href="/columbia.html"><img src="/img/columbia.png" class="mx-auto d-block img-fluid pop" alt="Columbia Logo" ></a>
-		</div>
-		<div class="col-md-3">
-			<a href="/cornell.html"><img src="/img/cornell.png" class="mx-auto d-block img-fluid pop" alt="Cornell Logo" ></a>
-		</div>
-		<div class="col-md-3">
-			<a href="/dartmouth.html"><img src="/img/dartmouth.png" class="mx-auto d-block img-fluid pop" alt="Dartmouth Logo" ></a>
-		</div>
-		<div class="col-md-3 ">
-			<a href="/georgetown.html"><img src="/img/georgetown.png" class="mx-auto d-block img-fluid pop" alt="Georgetown Logo" ></a>
-		</div>
-		<div class="col-md-3">
-			<a href="/gt.html"><img src="/img/gt.png" class="mx-auto d-block img-fluid pop" alt="GeorgiaTech Logo" ></a>
-		</div>
-		<div class="col-md-3">
-			<a href="/harvard.html"><img src="/img/harvard.png" class="mx-auto d-block img-fluid pop" alt="Harvard Logo" ></a>
-		</div>
-		<div class="col-md-3">
-			<a href="/jhu.html"><img src="/img/jhu.png" class="mx-auto d-block img-fluid pop" alt="John Hopkins Logo" ></a>
-		</div>
-		<div class="col-md-3">
-			<a href="/mit.html"><img src="/img/mit.png" class="mx-auto d-block img-fluid pop" alt="MIT Logo" ></a>
-		</div>
-		<div class="col-md-3">
-			<a href="/northwestern.html"><img src="/img/northwestern.png" class="mx-auto d-block img-fluid pop" alt="Northwestern Logo" ></a>
-		</div>
-		<div class="col-md-3">
-			<a href="/princeton.html"><img src="/img/princeton.png" class="mx-auto d-block img-fluid pop" alt="Princeton Logo" ></a>
-		</div>
-		<div class="col-md-3">
-			<a href="/rice.html"><img src="/img/rice.png" class="mx-auto d-block img-fluid pop" alt="Rice Logo" ></a>
-		</div>
-		<div class="col-md-3">
-			<a href="/stanford.html"><img src="/img/stanford.png" class="mx-auto d-block img-fluid pop" alt="Stanford Logo" ></a>
-		</div>
-		<div class="col-md-3">
-			<a href="/tufts.html"><img src="/img/tufts.png" class="mx-auto d-block img-fluid pop" alt="Tufts Logo" ></a>
-		</div>
-		<div class="col-md-3">
-			<a href="/uchicago.html"><img src="/img/uchicago.png" class="mx-auto d-block img-fluid pop" alt="UChicago Logo" ></a>
-		</div>
-		<div class="col-md-3 ">
-			<a href="/ucla.html"><img src="/img/ucla.png" class="mx-auto d-block img-fluid pop" alt="UCLA Logo" ></a>
-		</div>
-		<div class="col-md-3">
-			<a href="/umich.html"><img src="/img/umich.png" class="mx-auto d-block img-fluid pop" alt="UMich Logo" ></a>
-		</div>
-		<div class="col-md-3">
-			<a href="/upenn.html"><img src="/img/upenn.png" class="mx-auto d-block img-fluid pop" alt="UPenn Logo" ></a>
-		</div>
-		<div class="col-md-3">
-			<a href="/washingtonuniversity.html"><img src="/img/washingtonuniversity.png" class="mx-auto d-block img-fluid pop" alt="Washington University Logo" ></a>
-		</div>
-		<div class="col-md-3">
-			<a href="/yale.html"><img src="/img/yale.png" class="mx-auto d-block img-fluid pop" alt="Yale Logo" ></a>
-		</div>
-	</div>
-</div> 
-
-<!-- Calendar -->
-<div id="calendar"></div>
-
-<!-- Cookie Message -->
-<div class="container">
-	<div class="row">
-  <div class="toast"  style="position: fixed; bottom: 0; right: 0; margin: 1em; background-color: #1f2224" data-autohide="false">
-    <div class="toast-header" style="background-color: #212529;">
-      <strong class="mr-auto text-primary">Cookie Policy</strong>
-    </div>
-    <div class="toast-body" style="color: #a0a0a1">
-    	<div class="container-fluid padding">
-		<div class="row">
-			<div class="col-12" style="margin-bottom: 1em">
-		      Cookies are small bits of data that are stored on your computer whenever you browse to this website. These bits of data help make your rejection experience better and hopefully also make your ads better. By using this website you agree to use these cookies. <a style="color: #34a58e;" href="https://en.wikipedia.org/wiki/HTTP_cookie">Learn more...</a>
-		  	</div>
-		  	<div class="col-4 text-center">
-		  		<button id="acceptButton" data-dismiss="toast" class="btn btn-primary">Accept</button>
-		  	</div>
-		  	<div class="col-4 text-center">
-		  		<a class="btn btn-secondary" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" role="button">Decline</a>
-		  	</div>
-		  	<div class="col-4 text-center">
-		  		<a class="btn btn-secondary" href="/policy.html" role="button">Policy</a>
-		  	</div>
-		  	
-		  </div>
-
-		</div>
-    </div>
-  </div>
-</div>
-</div>
-
-<!--- Footer -->
-<footer>
+	<!--- Title -->
 	<div class="container-fluid padding">
 		<div class="row text-center">
-			<!--- Add ad here -->
-
-			<div class="col-12">
-				<h2 style="color: #ffffff !important;" class="amazon-title">Here are some ads:</h2>
-			</div>
-			
-			<div class="col-md-3">
-				<div class="other-ads">
-					<iframe data-aa="1348987" src="//acceptable.a-ads.com/1348987" scrolling="no" style="border:0px; padding:0; width:100%; height:100%; overflow:hidden" allowtransparency="true"></iframe>
-				</div>
-			</div>
-			<div class="col-md-6">
-				<div class="amazon-ads">
-					<div id="amzn-assoc-ad-b1f3644a-00fd-43b6-b24b-8f15f23fae05"></div><script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&adInstanceId=b1f3644a-00fd-43b6-b24b-8f15f23fae05"></script>
-				</div>
-			</div>
-
-			<div class="col-md-3">
-				<div class="other-ads">
-					<iframe data-aa="1348987" src="//acceptable.a-ads.com/1348987" scrolling="no" style="border:0px; padding:0; width:100%; height:100%; overflow:hidden" allowtransparency="true"></iframe>
-				</div>
-			</div>
-			<div class="col-12 privacy">
-				<a href="/policy.html">Privacy Policy</a>
+			<div class="col-md-12">
+				<h1 id="main-title">Acceptance Simulators</h1>
 			</div>
 		</div>
 	</div>
-</footer>
+
+	<!-- College Logos -->
+	<div class="container-fluid padding">
+		<div class="row">
+			<div class="col-md-3 ">
+				<a href="/brown/login.html"><img src="/img/brown.png" class="mx-auto d-block img-fluid pop"
+						alt="Brown Logo"></a>
+			</div>
+			<div class="col-md-3 ">
+				<a href="/bostonu.html"><img src="/img/bostonu.png" class="mx-auto d-block img-fluid pop"
+						alt="Boston University Logo"></a>
+			</div>
+			<div class="col-md-3 ">
+				<a href="/caltech.html"><img src="/img/caltech.png" class="mx-auto d-block img-fluid pop"
+						alt="Caltech Logo"></a>
+			</div>
+			<div class="col-md-3">
+				<a href="/columbia.html"><img src="/img/columbia.png" class="mx-auto d-block img-fluid pop"
+						alt="Columbia Logo"></a>
+			</div>
+			<div class="col-md-3">
+				<a href="/cornell.html"><img src="/img/cornell.png" class="mx-auto d-block img-fluid pop"
+						alt="Cornell Logo"></a>
+			</div>
+			<div class="col-md-3">
+				<a href="/dartmouth.html"><img src="/img/dartmouth.png" class="mx-auto d-block img-fluid pop"
+						alt="Dartmouth Logo"></a>
+			</div>
+			<div class="col-md-3 ">
+				<a href="/georgetown.html"><img src="/img/georgetown.png" class="mx-auto d-block img-fluid pop"
+						alt="Georgetown Logo"></a>
+			</div>
+			<div class="col-md-3">
+				<a href="/gt.html"><img src="/img/gt.png" class="mx-auto d-block img-fluid pop"
+						alt="GeorgiaTech Logo"></a>
+			</div>
+			<div class="col-md-3">
+				<a href="/harvard.html"><img src="/img/harvard.png" class="mx-auto d-block img-fluid pop"
+						alt="Harvard Logo"></a>
+			</div>
+			<div class="col-md-3">
+				<a href="/jhu.html"><img src="/img/jhu.png" class="mx-auto d-block img-fluid pop"
+						alt="John Hopkins Logo"></a>
+			</div>
+			<div class="col-md-3">
+				<a href="/mit/login.html"><img src="/img/mit.png" class="mx-auto d-block img-fluid pop" alt="MIT Logo"></a>
+			</div>
+			<div class="col-md-3">
+				<a href="/northwestern.html"><img src="/img/northwestern.png" class="mx-auto d-block img-fluid pop"
+						alt="Northwestern Logo"></a>
+			</div>
+			<div class="col-md-3">
+				<a href="/princeton.html"><img src="/img/princeton.png" class="mx-auto d-block img-fluid pop"
+						alt="Princeton Logo"></a>
+			</div>
+			<div class="col-md-3">
+				<a href="/rice.html"><img src="/img/rice.png" class="mx-auto d-block img-fluid pop" alt="Rice Logo"></a>
+			</div>
+			<div class="col-md-3">
+				<a href="/stanford.html"><img src="/img/stanford.png" class="mx-auto d-block img-fluid pop"
+						alt="Stanford Logo"></a>
+			</div>
+			<div class="col-md-3">
+				<a href="/tufts.html"><img src="/img/tufts.png" class="mx-auto d-block img-fluid pop"
+						alt="Tufts Logo"></a>
+			</div>
+			<div class="col-md-3">
+				<a href="/uchicago.html"><img src="/img/uchicago.png" class="mx-auto d-block img-fluid pop"
+						alt="UChicago Logo"></a>
+			</div>
+			<div class="col-md-3 ">
+				<a href="/ucla.html"><img src="/img/ucla.png" class="mx-auto d-block img-fluid pop" alt="UCLA Logo"></a>
+			</div>
+			<div class="col-md-3">
+				<a href="/umich.html"><img src="/img/umich.png" class="mx-auto d-block img-fluid pop"
+						alt="UMich Logo"></a>
+			</div>
+			<div class="col-md-3">
+				<a href="/upenn/login.html"><img src="/img/upenn.png" class="mx-auto d-block img-fluid pop"
+						alt="UPenn Logo"></a>
+			</div>
+			<div class="col-md-3">
+				<a href="/washingtonuniversity.html"><img src="/img/washingtonuniversity.png"
+						class="mx-auto d-block img-fluid pop" alt="Washington University Logo"></a>
+			</div>
+			<div class="col-md-3">
+				<a href="/yale.html"><img src="/img/yale.png" class="mx-auto d-block img-fluid pop" alt="Yale Logo"></a>
+			</div>
+		</div>
+	</div>
 </body>
+
 </html>
